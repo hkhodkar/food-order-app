@@ -35,7 +35,7 @@ export default function AvailableMeals() {
         <section className={classes.meals}>
             <Card>
                 {DUMMY_MEALS.map(item => (
-                    <MealItem key={item.id} name={item.name} description={item.description} price={item.price}></MealItem>
+                    <MealItem key={item.id} id={item.id} name={item.name} description={item.description} price={item.price}></MealItem>
                 ))}
             </Card>
         </section>

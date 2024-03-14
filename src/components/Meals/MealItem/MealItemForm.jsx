@@ -1,11 +1,11 @@
 import classes from './MealItemForm.module.css';
 import Input from '../../UI/Input';
 
-export default function MealItemForm() {
+export default function MealItemForm(props) {
     return (
         <form className={classes.form}>
             <Input label='amount' input={{
-                id: 'amount',
+                id: 'amount_' + props.id,
                 type: 'number',
                 min: '1',
                 max: '5',
